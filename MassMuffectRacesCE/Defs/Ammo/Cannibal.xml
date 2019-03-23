@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>CannibalAmmo</defName>
+      <label>Cannibal rifle shot</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CannibalAmmo</defName>
+    <label>Cannibal rifle shot</label>
+    <ammoTypes>
+      <AmmoSet_CannibalAmmo>Bullet_CannibalRifle</AmmoSet_CannibalAmmo>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="CannibalAmmo" ParentName="SpacerSmallAmmoBase" Abstract="True">
+    <description>A chunk of rock used by mass accelerator weapons.</description>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.01</Bulk>
+    </statBases>
+    <thingCategories>
+      <li>CannibalAmmo</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="CannibalAmmo">
+    <defName>Ammo_CannibalAmmo</defName>
+    <label>Cannibal ammo</label>
+    <graphicData>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <destroyOnDrop>true</destroyOnDrop>
+	<statBases>
+      <MarketValue>0.01</MarketValue>
+    </statBases>
+    <ammoClass>Charged</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseCannibalBullet" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Projectile/Bullet_Red</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <speed>225</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCannibalBullet">
+    <defName>Bullet_CannibalRifle</defName>
+    <label>cannibal rifle shot</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>9</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

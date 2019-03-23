@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="Gun_ChargeRifle"]/weaponTags</xpath>
+<value>
+<li>0ChargeRifle</li>
+</value>
+</Operation>
+
+
+</Patch>

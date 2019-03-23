@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ 
+ <Patch>
+ 
+   <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganPoorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganColonistBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+    
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+              	            <forcedSidearm>
+          <sidearmMoney>
+            <min>100</min>
+            <max>200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>NonNeolithicOnlyMelee</li>
+          </weaponTags>
+        </forcedSidearm>
+		</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="KroganSoldierBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li><li>0Vector</li></weaponTags>
+	 </value>
+     </Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1000</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="KroganVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li><li>0Vector</li><li>0Rpg</li><li>CE_MachineGun</li><li>0Usas</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganEliteBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>800</min>
+            <max>1500</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>2</min>
+            <max>3</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  
+  </Operation>
+  	 
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="KroganEliteBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li><li>0Vector</li><li>0Rpg</li><li>CE_MachineGun</li><li>0Usas</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganTraderBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganLeaderBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>2</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+      <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganBrawlerBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+      <shieldMoney>
+          <min>700</min>
+          <max>1200</max>
+        </shieldMoney>
+        <shieldTags>
+          <li>OutlanderShield</li>
+        </shieldTags>
+        <shieldChance>0.9</shieldChance>
+	  </li>
+    </value>
+  </Operation>
+  
+      <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganVeteranBrawlerBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+      <shieldMoney>
+          <min>1500</min>
+          <max>2500</max>
+        </shieldMoney>
+        <shieldTags>
+          <li>OutlanderShield</li>
+        </shieldTags>
+        <shieldChance>0.9</shieldChance>
+	  </li>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganWhiteHandSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+        </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="KroganWhiteHandSoldierBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0FNFAL</li><li>CE_AI_AssaultWeapon</li></weaponTags>
+	 </value>
+     </Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganWhiteHandVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1000</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="KroganWhiteHandVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0FNFAL</li><li>CE_AI_AssaultWeapon</li></weaponTags>
+	 </value>
+     </Operation>
+
+	 	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="KroganWhiteHandWizardBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1000</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+	 
+  </Patch>

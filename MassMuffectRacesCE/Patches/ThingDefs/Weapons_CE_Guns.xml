@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_RPGSeven"]/weaponTags</xpath>
+<value>
+<li>0Rpg</li>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_KrissVector"]</xpath>
+<value>
+<weaponTags><li>0Vector</li></weaponTags>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_USASTwelve"]</xpath>
+<value>
+<weaponTags><li>0Usas</li></weaponTags>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_AKTwelve"]</xpath>
+<value>
+<weaponTags><li>0Assault</li></weaponTags>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_AKFortySeven"]</xpath>
+<value>
+<weaponTags><li>0Assault</li></weaponTags>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_FNFAL"]</xpath>
+<value>
+<weaponTags><li>0Assault</li><li>0FNFAL</li></weaponTags>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_ChargeSniperRifle"]/weaponTags</xpath>
+<value>
+<li>0HardSnipers</li>
+</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+<xpath>*/ThingDef[defName="CE_Gun_TacFifty"]/weaponTags</xpath>
+<value>
+<li>0HardSnipers</li>
+</value>
+</Operation>
+
+</Patch>

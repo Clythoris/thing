@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ 
+ <Patch>
+ 
+   <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaPoorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>1</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaColonistBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>2</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+    
+        <Operation Class="PatchOperationRemove">
+   <xpath>*/PawnKindDef[@Name="VorchaColonistBase"]/weaponTags/li</xpath>
+     </Operation> 
+  
+  <Operation Class="PatchOperationAdd">
+   <xpath>*/PawnKindDef[@Name="VorchaColonistBase"]/weaponTags</xpath>
+    <value>
+	 <li>CE_SMG</li>
+	 <li>CE_Sidearm</li>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>2</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="VorchaSoldierBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0FNFAL</li><li>CE_SMG</li><li>CE_AI_AssaultWeapon</li></weaponTags>
+	 </value>
+     </Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="VorchaVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0FNFAL</li><li>CE_SMG</li><li>CE_AI_AssaultWeapon</li></weaponTags>
+	 </value>
+     </Operation>
+  
+      <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaChiefBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaWhiteHandSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>2</max>
+        </primaryMagazineCount>
+	  	  <forcedSidearm>
+          <sidearmMoney>
+            <min>100</min>
+            <max>300</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>NonNeolithicOnlyMelee</li>
+          </weaponTags>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="VorchaWhiteHandSoldierBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>Gun</li><li>CE_SMG</li></weaponTags>
+	 </value>
+     </Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="VorchaWhiteHandVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	            <forcedSidearm>
+          <sidearmMoney>
+            <min>100</min>
+            <max>600</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>NonNeolithicOnlyMelee</li>
+          </weaponTags>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="VorchaWhiteHandVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>Gun</li><li>CE_SMG</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  </Patch>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ 
+ <Patch>
+ 
+   <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianPoorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianColonistBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+    
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>4</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1000</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="BatarianVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianEliteBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="BatarianEliteBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianTraderBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+
+      <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="BatarianChancellorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>4</min>
+          <max>6</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+  </Patch>

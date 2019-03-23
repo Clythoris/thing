@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ 
+ <Patch>
+ 
+   <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianPoorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianColonistBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>2</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	  </li>
+    </value>
+  </Operation>
+    
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianSoldierBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>3</max>
+        </primaryMagazineCount>
+	        	            <forcedSidearm>
+          <sidearmMoney>
+            <min>100</min>
+            <max>200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>NonNeolithicOnlyMelee</li>
+          </weaponTags>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="SalarianSoldierBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0Assault</li><li>0Vector</li><li>CE_SMG</li></weaponTags>
+	 </value>
+     </Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianVeteranBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>4</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1000</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="SalarianVeteranBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0ChargeRifle</li><li>0Vector</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianEliteBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>800</min>
+            <max>1500</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+   <xpath>*/PawnKindDef[@Name="SalarianEliteBase"]/weaponTags</xpath>
+    <value>
+     <weaponTags><li>0ChargeRifle</li><li>0Vector</li></weaponTags>
+	 </value>
+     </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianTraderBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>1</min>
+          <max>2</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  
+    <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/PawnKindDef[@Name="SalarianCouncillorBase"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>4</min>
+          <max>6</max>
+        </primaryMagazineCount>
+         <forcedSidearm>
+          <sidearmMoney>
+            <min>500</min>
+            <max>1200</max>
+          </sidearmMoney>
+          <weaponTags>
+            <li>CE_Sidearm</li>
+          </weaponTags>
+          <magazineCount>
+            <min>1</min>
+            <max>2</max>
+          </magazineCount>
+        </forcedSidearm>
+	  </li>
+    </value>
+  </Operation>
+
+  </Patch>
